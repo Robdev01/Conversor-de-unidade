@@ -1,77 +1,79 @@
 Conversor de Unidades 🌡️📏
 
+
+
 Descrição
 Este é um simples conversor de unidades de temperatura (Celsius, Fahrenheit, Kelvin) e peso (Quilogramas, Libras, Gramas, Onças) criado com Flask para o back-end e HTML/CSS para o front-end. 🚀
 
-
 Funcionalidades
-
 Conversões de Temperatura:
 
-Celsius para Fahrenheit
+- Celsius para Fahrenheit
+- Fahrenheit para Celsius
+- Celsius para Kelvin
+- Kelvin para Celsius
+- Fahrenheit para Kelvin
+- Kelvin para Fahrenheit
+- Conversões de Peso:
 
-Fahrenheit para Celsius
+- Quilogramas para Libras
+- Libras para Quilogramas
+- Quilogramas para Gramas
+- Gramas para Quilogramas
+- Libras para Onças
+- Onças para Libras
 
-Celsius para Kelvin
+Pré-requisitos
 
-Kelvin para Celsius
+- Python 3.x
+- Flask
 
-Fahrenheit para Kelvin
+Instalação
+Clone este repositório:
 
-Kelvin para Fahrenheit
 
-Conversões de Peso:
 
-Quilogramas para Libras
+git clone https://github.com/seu_usuario/conversor-unidades.git
+cd conversor-unidades
+Crie um ambiente virtual e ative-o:
 
-Libras para Quilogramas
 
-Quilogramas para Gramas
-
-Gramas para Quilogramas
-
-Libras para Onças
-
-Onças para Libras
-
-Como Usar
-
+python -m venv venv
+source venv/bin/activate  # Para Windows: venv\Scripts\activate
 Instale as dependências:
 
-Certifique-se de ter o Flask instalado:
 
-bash
-Copy code
-pip install flask
-Estrutura do Projeto:
-Certifique-se de que sua estrutura de diretórios está correta:
-
-arduino
-Copy code
-/seu-diretorio/
-├── app.py
-├── static/
-│   └── style.css
-└── templates/
-    └── index.html
+pip install -r requirements.txt
+Como Usar
 Execute o servidor Flask:
-No terminal, navegue até o diretório onde está o app.py e execute:
 
-bash
-Copy code
+
 python app.py
-Acesse o Conversor:
-Abra um navegador e vá para http://127.0.0.1:5000/. Você verá o formulário do conversor de unidades.
+Abra o navegador e acesse:
+
+
+http://127.0.0.1:5000/
+Selecione o tipo de conversão, insira o valor e veja o resultado!
 
 Estrutura do Projeto
 arduino
-Copy code
+
 /seu-diretorio/
 ├── app.py
+├── requirements.txt
 ├── static/
 │   └── style.css
 └── templates/
     └── index.html
 app.py: Arquivo principal do servidor Flask.
+requirements.txt: Arquivo de dependências.
 static/style.css: Estilos CSS.
 templates/index.html: Template HTML.
+Contribuição
+Faça um fork do projeto.
+Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+Commit suas mudanças (git commit -am 'Adiciona nova feature').
+Faça o push para a branch (git push origin feature/nova-feature).
+Crie um novo Pull Request.
+Licença
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
