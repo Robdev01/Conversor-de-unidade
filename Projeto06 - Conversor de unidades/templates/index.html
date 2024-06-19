@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Unidades</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Conversor de Unidades</h1>
+    <form action="/" method="post">
+        <label for="unit">Escolha uma opção de conversão:</label>
+        <select name="unit" id="unit">
+            <option value="kg_lb">Quilogramas para Libras</option>
+            <option value="lb_kg">Libras para Quilogramas</option>
+            <option value="kg_g">Quilogramas para Gramas</option>
+            <option value="g_kg">Gramas para Quilogramas</option>
+            <option value="lb_oz">Libras para Onças</option>
+            <option value="oz_lb">Onças para Libras</option>
+            <option value="c_f">Celsius para Fahrenheit</option>
+            <option value="f_c">Fahrenheit para Celsius</option>
+            <option value="c_k">Celsius para Kelvin</option>
+            <option value="k_c">Kelvin para Celsius</option>
+            <option value="f_k">Fahrenheit para Kelvin</option>
+            <option value="k_f">Kelvin para Fahrenheit</option>
+        </select>
+        <br><br>
+        <label for="value">Digite o valor:</label>
+        <input type="number" name="value" id="value" step="any" required>
+        <br><br>
+        <button type="submit">Converter</button>
+    </form>
+
+    {% if result is not none %}
+        <h2>Resultado: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
