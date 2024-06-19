@@ -34,46 +34,74 @@ Clone este repositório:
 
 
 git clone https://github.com/seu_usuario/conversor-unidades.git
+
 cd conversor-unidades
+
 Crie um ambiente virtual e ative-o:
 
 
+
 python -m venv venv
+
 source venv/bin/activate  # Para Windows: venv\Scripts\activate
+
 Instale as dependências:
 
 
 pip install -r requirements.txt
+
 Como Usar
+
 Execute o servidor Flask:
 
 
 python app.py
+
 Abra o navegador e acesse:
 
 
 http://127.0.0.1:5000/
+
 Selecione o tipo de conversão, insira o valor e veja o resultado!
 
 Estrutura do Projeto
-arduino
+
 
 /seu-diretorio/
+
 ├── app.py
+
 ├── requirements.txt
+
 ├── static/
+
 │   └── style.css
+
 └── templates/
+
     └── index.html
+
 app.py: Arquivo principal do servidor Flask.
+
 requirements.txt: Arquivo de dependências.
+
 static/style.css: Estilos CSS.
+
 templates/index.html: Template HTML.
+
 Contribuição
+
 Faça um fork do projeto.
+
 Crie uma branch para sua feature (git checkout -b feature/nova-feature).
+
 Commit suas mudanças (git commit -am 'Adiciona nova feature').
+
 Faça o push para a branch (git push origin feature/nova-feature).
+
 Crie um novo Pull Request.
+
 Licença
+
 Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE para mais detalhes.
+
