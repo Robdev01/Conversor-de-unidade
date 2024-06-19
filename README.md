@@ -33,7 +33,6 @@ Clone este repositório:
 
 
 
-git clone https://github.com/seu_usuario/conversor-unidades.git
 
 cd conversor-unidades
 
